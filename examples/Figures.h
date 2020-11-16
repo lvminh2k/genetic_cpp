@@ -1,3 +1,4 @@
+#ifndef _FIGURE_H
 #define _FIGURE_H
 
 class Point2D{
@@ -17,3 +18,5 @@ public:
 	double Area();
 	double Perimeter();
 }; //end declaration of the Circle class
+
+#endif

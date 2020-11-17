@@ -1,0 +1,2 @@
+install git
+install dev c++ (windows) / codeblock (mac os)

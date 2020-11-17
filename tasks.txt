@@ -1,3 +1,4 @@
-install git
-install dev c++ (windows) / codeblock (mac os)
+install git DONE
+install dev c++ (windows) / codeblock (mac os) DONE
 explain public, this-> (in class)
+explain #ifndef and #define with example DONE

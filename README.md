@@ -21,3 +21,5 @@ https://www.youtube.com/watch?v=UNSoPa-XQN0
 https://drive.google.com/file/d/1QAKvLlx79Ta2uPNpT8wPt5EqS9KQyCbg/view?usp=sharing
 ### Book c++ in English
 https://drive.google.com/file/d/1TAZcvbsNVJGAp7emWOsCIacWOw7ek66S/view?usp=sharing
+### Variable pointer reference
+https://cpp.daynhauhoc.com/8/0-con-tr/

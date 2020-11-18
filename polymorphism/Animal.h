@@ -8,7 +8,7 @@ protected:
 public:
 	Animal();
 	Animal(string);
-	virtual void Sound();
+	void Sound();
 };
 
 class Dog: public Animal{

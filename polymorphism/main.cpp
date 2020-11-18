@@ -38,5 +38,10 @@ int main(int argc, char** argv) {
 		Animal* temp = Vl[i];
 		temp->Sound();
 	}
+	
+	cout << "display with c11" << endl;
+	for (Animal* item:Vl){
+		item->Sound();
+	}
 	return 0;
 }

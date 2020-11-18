@@ -8,7 +8,9 @@ int main(int argc, char** argv) {
 	cout << M;
 	cout << "number of matrix: " << M.nmatrix << endl;
 	MyMatrix N(3, 4);
+	MyMatrix P(3, 4);
 	cout << "number of matrix: " << M.nmatrix << endl;
 	cout << "number of matrix: " << N.nmatrix << endl;
+	
 	return 0;
 }

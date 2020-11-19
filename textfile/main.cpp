@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <string>
 using namespace std;
 
 void write_string_to_txt_file(){
@@ -69,11 +70,20 @@ void input_vector_write_to_file_then_read_it(){
     }
     inFile.close();
 }
+void read_string_from_text_file(){
+    ifstream inFile("hello.txt");
+    string s;
+    while (inFile >> s){
+        cout << s << endl;
+    }
+    inFile.close();
+}
 int main(){
     //write_string_to_txt_file();
     //read_all_string_from_txt_file();
     //write_int_to_file_then_read_it();
-    input_vector_write_to_file_then_read_it();
+    //input_vector_write_to_file_then_read_it();
+    read_string_from_text_file();
     cout << "done";
     return 0;
 }

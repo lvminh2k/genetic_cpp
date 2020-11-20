@@ -1,7 +1,8 @@
 install git DONE
 install dev c++ (windows) / codeblock (mac os) DONE
-explain public, this-> (in class)
+explain public, this-> (in class) DONE
 explain #ifndef and #define with example DONE
-explain variable pointer reference 
-explain why & and not & in function 
+explain variable pointer reference DONE
+explain why & and not & in function DONE
 explain why using namespace std 
+explain null pointer

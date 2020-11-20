@@ -20,6 +20,7 @@ void write_number_to_file_then_read_it(){
     cout << x << " " << y << endl;
     inFile.close();
 }
+
 int main(){
     write_number_to_file_then_read_it();
     return 0;

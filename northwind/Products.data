@@ -1,0 +1,6 @@
+{"CategoryId":1,"Price":18.0,"ProductId":1,"ProductName":"Chais","SupplierId":1,"Unit":"bottle"}
+{"CategoryId":1,"Price":19.0,"ProductId":2,"ProductName":"Chang","SupplierId":1,"Unit":"bottle"}
+{"CategoryId":1,"Price":10.0,"ProductId":3,"ProductName":"Aniseed Syrup","SupplierId":1,"Unit":"bottles"}
+{"CategoryId":1,"Price":22.0,"ProductId":4,"ProductName":"Chef Anton's Cajun Seasoning","SupplierId":1,"Unit":"jars"}
+{"CategoryId":1,"Price":21.35,"ProductId":5,"ProductName":"Chef Anton's Gumbo Mix","SupplierId":1,"Unit":"boxes"}
+{"CategoryId":2,"Price":50.53,"ProductId":6,"ProductName":"Trasua","SupplierId":2,"Unit":"glass"}

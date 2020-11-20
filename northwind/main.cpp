@@ -5,7 +5,7 @@
 #include "businessobjects/Products.h"
 #include "dataaccess/ProductsData.h"
 #include "libs/json.hpp"
-
+//https://github.com/nlohmann/json
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 using namespace std;
@@ -46,10 +46,27 @@ void create_product_convert_to_json(){
 	cout << j;
 }
 
+void test_nullptr(){
+	ProductsData productsdata("Products.data");
+	for (int i=0; i<productsdata.GetSize(); i++){
+		Products p = productsdata.Get(i);
+		cout << p.ToString() << endl;
+	}
+	Products* p = productsdata.GetPointer(-1);
+	if (p != nullptr){
+		cout << p->ProductName << endl;
+	}
+	else{
+		cout << "null" << endl;
+	}
+	
+}
+
 int main(int argc, char** argv) {
 
 	//create_product_convert_to_json();
 	//write_products_to_file();
-	read_products_from_file();
+	//read_products_from_file();
+	test_nullptr();
 	return 0;
 }

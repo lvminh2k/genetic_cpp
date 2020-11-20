@@ -14,6 +14,7 @@ public:
     int PushBack(Products);
     int Update(int, Products);
     Products Get(int);
+    Products* GetPointer(int);
     int GetSize();
     int ExportToFile(string);
 };

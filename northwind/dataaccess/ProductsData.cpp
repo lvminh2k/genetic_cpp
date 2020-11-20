@@ -77,6 +77,14 @@ Products ProductsData::Get(int i){
     return _data[i];
 }
 
+Products* ProductsData::GetPointer(int i){
+    Products* p = nullptr;
+    if (i < 0) return p;
+    if (i >= _data.size()) return p;
+    p = &_data[i];
+    return p;
+}
+
 /** @brief Function return size of ProductsData.
  *  
  *  Function return size of ProductsData. This is the quantity of Products objects inside ProductsData.

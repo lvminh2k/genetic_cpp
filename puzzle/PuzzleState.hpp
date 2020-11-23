@@ -8,8 +8,8 @@ class PuzzleState
 private:
     /* data */
     static const int _SIZE = 4;
-    string _s;
 public:
+    string values;
     int row0, col0;
 public:
     PuzzleState(/* args */);
@@ -27,17 +27,17 @@ friend ostream& operator<< (ostream& os, PuzzleState& p);
 };
 
 PuzzleState::PuzzleState(/* args */){
-    _s=""; row0=0; col0=0;
+    values=""; row0=0; col0=0;
 }
 
 PuzzleState::~PuzzleState(){
 }
 
 PuzzleState::PuzzleState(string s){
-    _s=s;
+    values=s;
     for (int i=0; i<_SIZE; i++){
         for (int j=0; j<_SIZE; j++){
-            if (_s[i*_SIZE +j] == '0') {
+            if (values[i*_SIZE +j] == '0') {
                 row0 = i; col0 = j;
                 return;
             }
@@ -46,22 +46,22 @@ PuzzleState::PuzzleState(string s){
 }
 
 PuzzleState::PuzzleState(PuzzleState& p){
-    string s(p._s);
-    _s = s;
+    string s(p.values);
+    values = s;
     row0 = p.row0;
     col0 = p.col0;
 }
 
 void PuzzleState::swap(int i0, int j0, int i1, int j1){
-    char t = _s[i0*_SIZE + j0];
-    _s[i0*_SIZE + j0] = _s[i1*_SIZE + j1];
-    _s[i1*_SIZE + j1] = t;
+    char t = values[i0*_SIZE + j0];
+    values[i0*_SIZE + j0] = values[i1*_SIZE + j1];
+    values[i1*_SIZE + j1] = t;
 }
 
 PuzzleState* PuzzleState::Clone(){
     PuzzleState *p = new PuzzleState();
-    string temp_s(this->_s);
-    p->_s = temp_s;
+    string temp_s(this->values);
+    p->values = temp_s;
     p->row0 = this->row0;
     p->col0 = this->col0;
     return p;
@@ -71,7 +71,7 @@ string PuzzleState::ToString(){
     string s = "";
     for (int i=0; i<_SIZE; i++){
         for (int j=0; j<_SIZE; j++){
-            s.push_back(_s[i*_SIZE +j]);
+            s.push_back(values[i*_SIZE +j]);
             s.push_back(' ');
         }
         s.push_back('\n');
@@ -117,7 +117,7 @@ PuzzleState* PuzzleState::Right(){
 ostream& operator<< (ostream& os, PuzzleState& p){
     for (int i=0; i<p._SIZE; i++){
         for (int j=0; j<p._SIZE; j++){
-            os << p._s[i*p._SIZE +j] << " ";
+            os << p.values[i*p._SIZE +j] << " ";
         }
         cout << endl;
     }

@@ -1,0 +1,15 @@
+#include<iostream>
+#include "MyClass.h"
+using namespace std;
+
+template <class T>
+void MyClass<T>::Set(T j){
+    i = j;
+}
+
+template <class T>
+void MyClass<T>::Display(){
+    cout << i << endl;
+}
+
+template class MyClass<double>;

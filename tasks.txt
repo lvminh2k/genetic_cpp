@@ -5,4 +5,26 @@ explain #ifndef and #define with example DONE
 explain variable pointer reference DONE
 explain why & and not & in function DONE
 explain why using namespace std 
-explain null pointer
+explain null pointer DONE
+explain any_cast
+26. Which of the following syntax is used to convert any variable to its original type?
+a) any_cast<variable_name>();
+b) any_cast(variable_name);
+c) <original_type>(variable_name);
+d) any_cast<original_type>(variable_name);
+Answer: d
+Explanation: The syntax used to convert the any variable to its original type is as follows:
+any_cast(variable_name);
+
+#include<iostream>
+#include<any>
+#include<string>
+using namespace std;
+
+int main()
+{
+	string s = "Hello World";
+	any var(s);
+	cout<<any_cast<string>(var)<<endl;
+	return 0;
+}

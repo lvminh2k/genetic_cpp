@@ -74,6 +74,9 @@ int ProductsData::Update(int i, Products p){
  *  if fail, return NULL;
  */
 Products ProductsData::Get(int i){
+    string s("index out of bound!");
+    if (i < 0) throw s;
+    if (i >= _data.size()) throw s;
     return _data[i];
 }
 
